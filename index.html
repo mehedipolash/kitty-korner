@@ -35,6 +35,13 @@
       font-family: "Sora", serif;
       font-weight: 400;
     }
+
+    @media (max-width: 576px) {
+      .banner-image {
+        position: static !important;
+        margin-top: 16px;
+      }
+    }
   </style>
 
   <script>
@@ -107,12 +114,30 @@
     </div>
   </header>
 
-  <main>
-  
+  <main class="mx-auto px-6 max-w-7xl">
+
+    <!-- banner-section -->
+    <section class="mt-24 relative">
+      <!-- Text and Button -->
+      <div class="space-y-3 relative z-10">
+        <h1 class="font1 text-6xl">Pamper Your Pet,<br> Because They Deserve<br>the Best</h1>
+        <p class="font2 text-2">Discover a world of treats, toys, and essentials handpicked for<br> your furry friends.
+          Shop
+          now
+          and make tails wag with joy!</p>
+        <button class="bg-btn-primary text-black font2 rounded-md px-4 py-2">Find a pet</button>
+      </div>
+
+      <!-- Image -->
+      <div class="absolute top-0 right-0 z-0 banner-image"> <!-- Adjusted positioning -->
+        <img src="./c1-assets/cat-big.png" alt="Cat Image" class="w-auto h-auto">
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    
+
   </footer>
 </body>
 
