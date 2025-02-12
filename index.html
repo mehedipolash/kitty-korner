@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kitty-corner</title>
+
+  <!-- daisyUI + Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .font1 {
+      font-family: "ADLaM Display", serif;
+      font-weight: 400;
+    }
+
+    .font2 {
+      font-family: "Sora", serif;
+      font-weight: 400;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'btn-primary': '#FFDC26',
+            'nav-primary': '#FFF9F4',
+            'footer-primary': '#F9DF8A',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <header class="w-full bg-nav-primary">
+
+    <div class="navbar mx-auto px-6 max-w-7xl flex items-center justify-between">
+
+      <!-- Navbar Start (Logo Always Visible) -->
+      <div class="flex items-center">
+        <img src="c1-assets/logo-header.png" alt="Logo" class="h-10 w-auto mr-2">
+        <h1 class="lg:text-[26px] font2  lg:flex">Browse<span class="text-btn-primary">4</span>Pets</h1>
+      </div>
+
+      <!-- Navbar Center (Hidden on Small Screens) -->
+      <div class="hidden lg:flex">
+        <ul class="flex space-x-8 font2 text-xl">
+          <li><a href="#" class="hover:text-yellow-700">Find a pet</a></li>
+          <li><a href="#" class="hover:text-yellow-700">Breeds</a></li>
+          <li><a href="#" class="hover:text-yellow-700">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Navbar End (Icons & Buttons) -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <!-- Icons -->
+        <img src="c1-assets/bell.png" alt="Bell Icon" class="h-6 w-6">
+        <i class="fa fa-search text-lg"></i>
+
+        <!-- Buttons -->
+        <button class="border border-btn-primary text-black font2 px-6 py-2 rounded-lg">
+          Login
+        </button>
+        <a class="bg-btn-primary text-black font2 px-6 py-2 rounded-lg">Register</a>
+      </div>
+
+      <!-- Mobile Menu (Only Visible on Small Screens) -->
+      <div class="lg:hidden">
+
+        <div class="dropdown dropdown-end">
+          <button tabindex="0" role="button" class="btn btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </button>
+          <ul tabindex="0" class="dropdown-content z-[1] mt-3 w-52 p-2">
+            <li><a href="#">Find a pet</a></li>
+            <li><a href="#">Breeds</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+  
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+
+</html>
